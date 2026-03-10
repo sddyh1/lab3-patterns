@@ -1,0 +1,20 @@
+﻿<Window x:Class="FactoryMethodStep.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Factory Method Demo" Height="400" Width="400">
+    <StackPanel Margin="10">
+        <ComboBox x:Name="ColorComboBox" SelectionChanged="ColorComboBox_SelectionChanged" Margin="5">
+            <ComboBoxItem Content="Красный" IsSelected="True"/>
+            <ComboBoxItem Content="Синий"/>
+            <ComboBoxItem Content="Зелёный"/>
+        </ComboBox>
+        <WrapPanel HorizontalAlignment="Center" Margin="5">
+            <Button x:Name="BtnCircle" Content="Круг" Click="BtnCircle_Click" Margin="5" Padding="10,5"/>
+            <Button x:Name="BtnSquare" Content="Квадрат" Click="BtnSquare_Click" Margin="5" Padding="10,5"/>
+            <Button x:Name="BtnTriangle" Content="Треугольник" Click="BtnTriangle_Click" Margin="5" Padding="10,5"/>
+        </WrapPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <WrapPanel x:Name="FiguresPanel" Orientation="Horizontal"/>
+        </ScrollViewer>
+    </StackPanel>
+</Window>
