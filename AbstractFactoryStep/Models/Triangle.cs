@@ -2,7 +2,7 @@
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace FactoryMethodStep.Models
+namespace AbstractFactoryStep.Models
 {
     public class Triangle : Figure
     {

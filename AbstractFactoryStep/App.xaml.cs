@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace FactoryMethodStep
+namespace AbstractFactoryStep
 {
     /// <summary>
     /// Interaction logic for App.xaml

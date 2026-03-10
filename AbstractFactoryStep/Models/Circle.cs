@@ -2,13 +2,13 @@
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace FactoryMethodStep.Models
+namespace AbstractFactoryStep.Models
 {
-    public class Square : Figure
+    public class Circle : Figure
     {
         public override UIElement CreateUIElement(double size = 50)
         {
-            return new Rectangle
+            return new Ellipse
             {
                 Width = size,
                 Height = size,
